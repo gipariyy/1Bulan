@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kartu Ucapan Selamat Tema Kucing</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+  :root {
+    --color-bg: #ffffff;
+    --color-text-primary: #111827;
+    --color-text-secondary: #6b7280;
+    --color-card-bg: #f9fafb;
+    --color-accent: #2563eb;
+    --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.1);
+    --border-radius: 0.75rem;
+    --transition-duration: 0.4s;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+  }
+  .container {
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  .card {
+    background: var(--color-card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-card);
+    padding: 2.5rem 2rem 3rem;
+    cursor: pointer;
+    user-select: none;
+    transition:
+      transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow var(--transition-duration);
+    transform-style: preserve-3d;
+    perspective: 800px;
+    position: relative;
+  }
+.card:hover,
+  .card:focus-visible {
+    transform: rotateY(10deg) scale(1.05);
+    box-shadow: 0 16px 48px rgba(37, 99, 235, 0.3);
+    outline: none;
+  }
+   .card:active {
+    transform: scale(0.98);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+  }
+  .card h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+  }
+  .card p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin: 0.75rem 0;
+    user-select: text;
+  }
+    @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .cat-illustration {
+    width: 120px;
+    margin: 1.5rem auto 0.5rem;
+    display: block;
+  }
+   @keyframes tail-wag {
+    0%, 100% { transform: rotate(5deg); }
+    50% { transform: rotate(-10deg); }
+  }
+  @keyframes blink {
+    0%, 20%, 40%, 60%, 80%, 100% { transform: scaleY(1); }
+    10%, 30%, 50%, 70%, 90% { transform: scaleY(0.1); }
+  }
+
+  .tail {
+    transform-origin: top left;
+    animation: tail-wag 3s ease-in-out infinite;
+  }
+
+  .eye {
+    transform-origin: center;
+    animation: blink 5s step-start infinite;
+  }
+
+  @media (max-width: 480px) {
+    .card h1 {
+      font-size: 2.4rem;
+    }
+
+.card p {
+      font-size: 1rem;
+    }
+    .cat-illustration {
+      width: 90px;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  </style>
+</head>
+<body>
+<main class="container" role="main">
+  <section 
+    class="card"
+    tabindex="0"
+    aria-label="Kartu ucapan selamat dengan tema kucing dan animasi lucu">
+        <svg class="cat-illustration" viewBox="0 0 64 64" fill="none" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="32" cy="32" r="28" stroke="#2563eb" stroke-width="2" fill="#e0e7ff"/>
+      <path d="M14 18 L20 6 L26 18 Z" fill="#2563eb"/>
+      <path d="M38 18 L44 6 L50 18 Z" fill="#2563eb"/>
+      <ellipse class="eye" cx="22" cy="33" rx="5" ry="8" fill="#111827"/>
+      <ellipse class="eye" cx="42" cy="33" rx="5" ry="8" fill="#111827"/>
+      <path d="M32 40 L28 44 L36 44 Z" fill="#ff6f91"/>
+      <path d="M28 46 Q32 50 36 46" stroke="#111827" stroke-width="1.5" fill="none"/>
+      <path d="M18 38 L10 36" stroke="#2563eb" stroke-width="1.5" />
+      <path d="M18 42 L10 44" stroke="#2563eb" stroke-width="1.5" />
+      <path d="M46 38 L54 36" stroke="#2563eb" stroke-width="1.5" />
+      <path d="M46 42 L54 44" stroke="#2563eb" stroke-width="1.5" />
+      <path class="tail" d="M56 50 Q58 44 54 42 Q50 40 52 38" stroke="#2563eb" stroke-width="3" fill="none" stroke-linecap="round" />
+    </svg>
+    <h1>CIE UDAH SEBULAN!</h1>
+    <p>Bahagia terus ya sayang sama mas hehe 🐾.</p>
+    <p>Jangan pernah bosen ya sama mas mu inii WKWKW, tapi ya emang mas mu ini boring person sih hehe</p>
+    <p>Semoga kita bisa sama sama terus ya sayaangg, semmoga semua cita cita kita berdua bisa terpacaii, semoga perasaan kita berdua masih tetep sama selama lamanya ihiyyy</p>
+    <p>Jangan pernah ngerasa sendiri ya sayaangg, kan ada mas di samping adek hehe, sama apa lagi ya? oh iya jangan pernah jadiin mas penghalang untuk kamu ngeraih cita-cita kamuu ya sayang. I LOVE U SO MUCHHH!</p>
+  </section>
+</main>
+</body>
+</html>
